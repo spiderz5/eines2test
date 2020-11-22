@@ -1,0 +1,57 @@
+/* Flexbox grups */
+
+.grup {
+  padding: 10px;
+
+  & a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.grup-content {
+  padding: 10px;
+
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+}
+
+.grup-foto {
+  position: relative;
+  display: block;
+}
+
+.grup-destacat {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: $color-primari;
+  text-align: center;
+}
+
+.grup-data {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+  .grups {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grup {
+    flex: 0 1 50%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .grup {
+    flex: 0 1 33%;
+  }
+}

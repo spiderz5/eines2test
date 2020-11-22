@@ -21,7 +21,10 @@
  * It's a best practice to use a partial for each page
  */
 
-@import "layouts/home";
+@import "layouts/general";
+@import "layouts/footer";
+@import "layouts/grups";
+@import "layouts/grid";
 
 /**
  * Do NOT include anything else in this file!

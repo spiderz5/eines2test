@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: $font-family-sans-serif;
+}
+
+.grid,
+.nav-item,
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.bg-primary {
+  background-color: $color-secondari !important;
+}
+
+.bg-light {
+  background-color: $color-primari !important;
+}
+img {
+  max-width: 100%;
+}
+
+.nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.page-link:hover {
+  color: $color-primari;
+  background-color: theme-color("primary");
+}
+
+.tracks ol {
+  margin-bottom: 0;
+  counter-reset: contador;
+
+  & li {
+    padding-left: 3rem;
+    margin-bottom: 1.5rem;
+    list-style: none;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      width: 40px;
+      margin: 5px 10px;
+      line-height: 40px;
+      color: $color-primari;
+      text-align: center;
+      content: counter(contador);
+      counter-increment: contador;
+      background: $color-secondari;
+      border-radius: 50%;
+    }
+  }
+}
+
+.tracks-inici-quatre {
+  counter-reset: contador 4 !important;
+}
+
+.blockquote {
+  position: relative;
+  display: block;
+  padding: 2.5em 0 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  border-color: $color-secondari;
+  border-style: solid;
+  border-width: 2px 0;
+
+  &::before {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 3rem;
+    height: 2rem;
+    font: 6em/1.08em sans-serif;
+    color: lighten($color-terciari, 25%);
+    text-align: center;
+    content: "\201C";
+    background: $color-primari;
+  }
+
+  &::after {
+    position: absolute;
+    right: 30px;
+    bottom: -30px;
+    width: 3rem;
+    height: 4rem;
+    font: 6em/1.08em sans-serif;
+    color: lighten($color-terciari, 25%);
+    text-align: center;
+    content: "\201D";
+    background: $color-primari;
+  }
+}

@@ -1,0 +1,193 @@
+/* Grid  Home */
+
+.grid {
+  display: block;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.item-nom,
+.item-lloc {
+  display: flex;
+  margin: 0;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.item-nom {
+  align-self: flex-end;
+  font-size: 3vw;
+}
+
+.item-lloc {
+  justify-content: flex-end;
+  font-size: 2vw;
+  text-align: right;
+}
+
+.grid-item {
+  position: relative;
+  margin: 10px;
+  background-position: center center;
+  background-size: cover;
+
+  & a {
+    display: inline-block;
+    padding: 8px 15px;
+    color: $color-terciari;
+    text-decoration: none;
+    background: $color-primari;
+    opacity: 1;
+  }
+
+  &:hover a {
+    display: block;
+  }
+  &.item1 {
+    grid-area: 12 / 2 / 21 / 9;
+    background-image: url(../images/Guillamino2018.jpg);
+  }
+
+  &.item2 {
+    grid-area: 4 / 4 / 12 / 9;
+    background-image: url(../images/Fetus-top4.jpg);
+  }
+
+  &.item3 {
+    grid-area: 15 / 9 / 26 / 14;
+    background-image: url(../images/AAAAA.jpg);
+  }
+
+  &.item4 {
+    grid-area: 1 / 9 / 15 / 14;
+    background-image: url(../images/PV.jpg);
+  }
+
+  &.item5 {
+    grid-area: 11 / 14 / 24 / 20;
+    background-image: url(../images/maz.jpg);
+  }
+
+  &.item6 {
+    grid-area: 3 / 14 / 11 / 22;
+    background-image: url(../images/Asanjo.jpg);
+  }
+
+  &.item7 {
+    grid-area: 20 / 20 / 27 / 26;
+    background-image: url(../images/MLtop.jpg);
+  }
+
+  &.item8 {
+    grid-area: 11 / 20 / 20 / 29;
+    background-image: url(../images/lespiadimonis.jpg);
+  }
+
+  &.item-nom {
+    grid-area: 7 / 22 / 11 / 30;
+  }
+
+  &.item-lloc {
+    grid-area: 21 / 7 / 24 / 9;
+  }
+
+  &.item-logo {
+    grid-area: 7/12/19/18;
+    background-image: url(../images/logobr2008.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  & a:hover {
+    color: $color-primari;
+    background: transparentize($color-terciari, 0.4);
+    opacity: 1;
+  }
+}
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-auto-rows: calc((calc(100vh) / 28) - 10px);
+    grid-auto-columns: calc((calc(100%) / 32) - 10px);
+    grid-gap: 10px;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    max-width: initial;
+    height: 100vh;
+    margin: initial;
+  }
+
+  .grid-item {
+    margin: initial;
+    & a {
+      display: block;
+      height: 100%;
+      padding: 1em;
+      font-size: 30px;
+      font-weight: 700;
+      opacity: 0;
+    }
+    &.item5 {
+      & a {
+        position: relative;
+
+        & span {
+          position: absolute;
+          right: 30px;
+          bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .grid {
+    height: auto;
+    grid-auto-rows: 60px !important;
+    grid-auto-columns: auto !important;
+    grid-gap: 5px;
+  }
+
+  .grid-item {
+    grid-area: auto !important;
+
+    & a {
+      display: inline-block;
+      padding: 8px 15px;
+      background: $color-primari;
+      opacity: 1;
+    }
+
+    &:hover a {
+      display: block;
+    }
+
+    &.item5 {
+      & a {
+        & span {
+          position: relative;
+          right: initial;
+          bottom: initial;
+        }
+      }
+    }
+
+    &.item-logo {
+      display: none;
+    }
+  }
+
+  .item-lloc {
+    padding: 1vh 0;
+    font-size: 4vw;
+  }
+
+  .item-nom {
+    grid-row: 1 / -1 !important;
+    padding: 1vh 0;
+    font-size: 6vw;
+  }
+}

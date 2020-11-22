@@ -56,21 +56,21 @@
           <div class="form-row">
             <div class="form-group col-md-3">
               <label for="Nom">Nom</label>
-              <input type="text" class="form-control" id="Nom" placeholder="Nom">
+              <input type="text" class="form-control" id="Nom" name="Nom" placeholder="Nom">
             </div>
             <div class="form-group col-md-4">
               <label for="Cognoms">Cognoms</label>
-              <input type="text" class="form-control" id="Cognoms" placeholder="Cognoms">
+              <input type="text" class="form-control" id="Cognoms" name="Cognoms" placeholder="Cognoms">
             </div>
             <div class="form-group col-md-5">
               <label for="Email">Adreça electrònica</label>
-              <input type="email" class="form-control" id="Email" placeholder="Email">
+              <input type="email" class="form-control" id="Email"  name="Email" placeholder="Email">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="Poblacio">Poblacio</label>
-              <input type="text" class="form-control" id="Poblacio" placeholder="Població">
+              <input type="text" class="form-control" id="Poblacio" name="Poblacio" placeholder="Població">
             </div>
             <div class="form-group col-md-6">
               <label for="Provincia">Provincia</label>
@@ -87,7 +87,7 @@
           <div class="form-row">
             <div class="form-group col-md-9">
               <label for="Concert">Concert</label>
-              <select id="Concert" class="form-control">
+              <select id="Concert" name="concert[]" class="form-control">
                 <option selected>Escull..</option>
                 <option>Mazoni - 4 Desembre</option>
                 <option>Sanjosex - 5 Desembre</option>
@@ -101,17 +101,17 @@
             </div>
             <div class="form-group col-md-3">
               <label for="Numero">Numero d'invitacions</label>
-              <select id="Numero" class="form-control">
-                <option selected>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+              <select id="Numero" name="numero[]" class="form-control">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
               </select>
             </div>
           </div>
           <div class="form-group">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="politica" >
+              <input class="form-check-input" type="checkbox" id="politica" name="politica">
               <label class="form-check-label" for="politica"> Accepto la <a href="#" target="_blank">politica de privacitat</a> </label>
             </div>
           </div>

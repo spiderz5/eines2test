@@ -226,7 +226,7 @@ img {
   & li {
     margin-bottom: 1.5rem;
     list-style: none;
-    padding-left: 0.8rem;
+    padding-left: 3rem;
 
     &::before {
       position: absolute;
@@ -245,7 +245,7 @@ img {
 }
 
 .tracks-inici-quatre {
-  counter-reset: contador + 4;
+  counter-reset: contador 4;
 }
 
 .footer {

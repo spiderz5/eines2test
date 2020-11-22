@@ -1,0 +1,13 @@
+@use "sass:color";
+
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-serif: "Roboto Slab", serif;
+
+$color-primari: #8d8d8d;
+$color-secondari: #be0926;
+$color-terciari: #000;
+$color-quart: #fff;
+
+$theme-colors: (
+  "primary": #be0926 // posa-hi el codi de color que prefereixis,,,,,
+);

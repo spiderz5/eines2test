@@ -24,6 +24,30 @@ module.exports = {
         }
       ],
       "value-keyword-case": null,
+      'at-rule-empty-line-before': null,
+    'at-rule-name-space-after': 'always',
+    'at-rule-no-vendor-prefix': true,
+    'at-rule-semicolon-space-before': 'never',
+    'block-closing-brace-empty-line-before': null,
+    'block-closing-brace-newline-after': null,
+    'block-opening-brace-space-before': null,
+    'color-named': 'never',
+    'declaration-block-semicolon-newline-before': 'never-multi-line',
+    'declaration-empty-line-before': null,
+    'font-family-name-quotes': 'always-where-recommended',
+    'font-weight-notation': [
+      'numeric',
+      {
+        'ignore': [
+          'relative'
+        ]
+      }
+    ],
+    'function-url-no-scheme-relative': true,
+    'function-url-quotes': 'always',
+    'max-empty-lines': 2,
+    'max-line-length': null,
+    'media-feature-name-no-vendor-prefix': true,
       'order/properties-order': [
         'position',
         'top',

@@ -4,7 +4,7 @@
   padding: 10px;
 
   & a {
-    color: black;
+    color: $color-terciari;
     text-decoration: none;
   }
 }
@@ -15,7 +15,7 @@
   & h2 {
     margin-top: 0;
     margin-bottom: 0.5em;
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 
@@ -30,7 +30,7 @@
   right: 10px;
   padding: 5px 10px;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 700;
   color: $color-primari;
   text-align: center;
 }

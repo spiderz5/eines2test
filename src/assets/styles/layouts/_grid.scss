@@ -45,42 +45,42 @@
   }
   &.item1 {
     grid-area: 12 / 2 / 21 / 9;
-    background-image: url(../images/Guillamino2018.jpg);
+    background-image: url("../images/Guillamino2018.jpg");
   }
 
   &.item2 {
     grid-area: 4 / 4 / 12 / 9;
-    background-image: url(../images/Fetus-top4.jpg);
+    background-image: url("../images/Fetus-top4.jpg");
   }
 
   &.item3 {
     grid-area: 15 / 9 / 26 / 14;
-    background-image: url(../images/AAAAA.jpg);
+    background-image: url("../images/AAAAA.jpg");
   }
 
   &.item4 {
     grid-area: 1 / 9 / 15 / 14;
-    background-image: url(../images/PV.jpg);
+    background-image: url("../images/PV.jpg");
   }
 
   &.item5 {
     grid-area: 11 / 14 / 24 / 20;
-    background-image: url(../images/maz.jpg);
+    background-image: url("../images/maz.jpg");
   }
 
   &.item6 {
     grid-area: 3 / 14 / 11 / 22;
-    background-image: url(../images/Asanjo.jpg);
+    background-image: url("../images/Asanjo.jpg");
   }
 
   &.item7 {
     grid-area: 20 / 20 / 27 / 26;
-    background-image: url(../images/MLtop.jpg);
+    background-image: url("../images/MLtop.jpg");
   }
 
   &.item8 {
     grid-area: 11 / 20 / 20 / 29;
-    background-image: url(../images/lespiadimonis.jpg);
+    background-image: url("../images/lespiadimonis.jpg");
   }
 
   &.item-nom {
@@ -93,7 +93,7 @@
 
   &.item-logo {
     grid-area: 7/12/19/18;
-    background-image: url(../images/logobr2008.png);
+    background-image: url("../images/logobr2008.png");
     background-repeat: no-repeat;
     background-size: contain;
   }

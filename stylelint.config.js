@@ -24,7 +24,7 @@ module.exports = {
         }
       ],
       "value-keyword-case": null,
-      
+     
       'property-no-vendor-prefix': true,
       'rule-empty-line-before': null,
       'selector-attribute-quotes': 'always',
